@@ -40,7 +40,7 @@ export const Input = styled.input`
   box-shadow: 0 0 30px rgb(0 0 0 / 12%);
 `
 export const Span = styled.span`
-  font-size: 15px;
+  font-size: 16px;
   margin-top: 10px;
 `
 export const Button = styled.button`
