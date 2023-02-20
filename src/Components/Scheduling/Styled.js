@@ -9,7 +9,6 @@ export const ConteinerScheduling = styled.section`
   background-color: #ffe4e1;
   border-radius: 15px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 `
@@ -17,7 +16,9 @@ export const Form = styled.form`
   width: 100%;
   height: 50%;
   display: flex;
-  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
 `
 export const Label = styled.label`
   font-family: 'Roboto Slab', sans-serif;
@@ -42,8 +43,8 @@ export const Span = styled.span`
   font-size: 15px;
 `
 export const Button = styled.button`
-  margin-top: 15%;
-  margin-left: 39%;
+  margin-top: 20%;
+
   width: 10%;
   height: 6%;
   font-size: 22px;
