@@ -21,9 +21,9 @@ export const Form = styled.form`
   padding-left: 50px;
 `
 export const Label = styled.label`
+  height: 50%;
   font-family: 'Roboto Slab', sans-serif;
   font-size: 140%;
-  margin-top: 50px;
   margin-right: 50px;
   color: #ff56c0;
 `
@@ -41,10 +41,10 @@ export const Input = styled.input`
 `
 export const Span = styled.span`
   font-size: 15px;
+  margin-top: 10px;
 `
 export const Button = styled.button`
-  margin-top: 20%;
-
+  margin-top: 15%;
   width: 10%;
   height: 6%;
   font-size: 22px;
