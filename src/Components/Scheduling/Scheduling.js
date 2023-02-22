@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
@@ -39,7 +39,10 @@ function Scheduling() {
   })
 
   const onShubmit = event => {
-    event = window.location.assign('/obrigado')
+    const handleSubmit = true
+    if (handleSubmit === true) {
+      event.handleSubmit === window.location.assign('/obrigado')
+    }
   }
 
   return (

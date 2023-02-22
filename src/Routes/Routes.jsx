@@ -9,7 +9,6 @@ function Routes() {
     <>
     <Header/>
     <Outlet/>
- 
     </>
   )
 }
