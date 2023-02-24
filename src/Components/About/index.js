@@ -1,4 +1,4 @@
-import { ContainerSobre, BoxOne, Image, BoxTwo } from './Styled'
+import { ContainerSobre, BoxOne, Image, BoxTwo } from './styled'
 import Jhordana from '../../assets/Jhordana-About.jpeg'
 
 function Sobre() {

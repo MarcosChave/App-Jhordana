@@ -7,7 +7,7 @@ import {
   Img,
   BoxArrow,
   Video
-} from './Styled'
+} from './styled'
 import { Link } from 'react-router-dom'
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide'
 import CiliosOne from '../../assets/CiliosOne.jpeg'

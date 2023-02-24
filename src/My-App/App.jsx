@@ -3,11 +3,11 @@ import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Routes from '../Routes/Routes'
-import Home from '../Components/Home/Home'
-import Sobre from '../Components/About/About'
-import Work from '../Components/Work/Work'
-import Scheduling from '../Components/Scheduling/Scheduling'
-import Thank from '../Components/ThankYou/Thank'
+import Home from '../Components/Home'
+import Sobre from '../Components/About'
+import Work from '../Components/Work'
+import Scheduling from '../Components/Scheduling'
+import Thank from '../Components/ThankYou'
 
 function App() {
 

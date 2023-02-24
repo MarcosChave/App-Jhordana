@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
@@ -11,7 +11,7 @@ import {
   Button,
   Span,
   IconWpp
-} from './Styled'
+} from './styled'
 import { useNavigate } from 'react-router-dom'
 
 const schema = yup

@@ -1,4 +1,4 @@
-import { ContainerThank, BoxConfirmation, Image, ImageBor } from './Style'
+import { ContainerThank, BoxConfirmation, Image, ImageBor } from './style'
 import JhordanaThanks from '../../assets/Jhordana-thanks.jpeg'
 import Borboleta from '../../assets/borboleta.png'
 function Thank() {
