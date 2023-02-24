@@ -13,11 +13,21 @@ export const ContainerThank = styled.section`
   align-items: center;
 `
 export const BoxConfirmation = styled.div`
-  width: 40%;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`
+export const TextTank = styled.div`
+  width: 80%;
   height: 30%;
-  padding-top: 4%;
+  margin-top: -45px;
   color: #fffaf0;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 28px;
   border-radius: 30px;
   background-color: rgba(255, 20, 147);
@@ -28,9 +38,7 @@ export const Image = styled.img`
   border-radius: 8%;
 `
 export const ImageBor = styled.img`
-  width: 8%;
-  position: absolute;
-  margin-bottom: 270px;
-  margin-left: 1050px;
+  width: 20%;
+  margin-left: 500px;
   transform: scaleX(-1);
 `
