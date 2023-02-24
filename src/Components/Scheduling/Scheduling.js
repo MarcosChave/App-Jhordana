@@ -12,6 +12,7 @@ import {
   Span,
   IconWpp
 } from './Styled'
+import { useNavigate } from 'react-router-dom'
 
 const schema = yup
   .object({
@@ -29,6 +30,8 @@ const schema = yup
   .required()
 
 function Scheduling() {
+  const navigate = useNavigate()
+
   const {
     register,
     handleSubmit,
@@ -39,10 +42,7 @@ function Scheduling() {
   })
 
   const onShubmit = event => {
-    const handleSubmit = true
-    if (handleSubmit === true) {
-      event.handleSubmit === window.location.assign('/obrigado')
-    }
+    event ? navigate('/obrigado') : null
   }
 
   return (
