@@ -9,6 +9,7 @@ export const ContainerWork = styled.section`
   justify-content: center;
   align-items: center;
 `
+
 export const BoxWork = styled.div`
   width: 50%;
   height: 100%;
@@ -24,7 +25,16 @@ export const BoxWork = styled.div`
     justify-content: center;
     align-items: center;
   }
+
+  @media (max-width: 768px) {
+    width: 60%;
+  }
+
+  @media (max-width: 380px) {
+    width: 80%;
+  }
 `
+
 export const BoxArrow = styled.div`
   width: 120%;
   height: 100%;
@@ -63,7 +73,19 @@ export const BoxHorário = styled.div`
     height: 7%;
     margin-top: 25%;
   }
+
+  @media (max-width: 768px) {
+    width: 40%;
+    border-radius: 15px;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 380px) {
+    width: 70%;
+    margin-left: 5%;
+  }
 `
+
 export const Text = styled.p`
   font-family: 'Satisfy', sans-serif;
   font-size: 45px;
@@ -88,13 +110,31 @@ export const Button = styled.button`
     cursor: pointer;
   }
 `
+
 export const Img = styled.img`
   width: 480px;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+
+  @media (max-width: 380px) {
+    width: 100%;
+  }
 `
+
 export const Video = styled.div`
   display: flex;
   justify-content: center;
   video {
     height: 650px;
+
+  @media (max-width: 768px) {
+    height: 500px;
   }
-`
+
+  @media (max-width: 380px) {
+    height: 350px;
+  }
+}
+`;

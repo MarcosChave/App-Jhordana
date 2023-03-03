@@ -7,7 +7,12 @@ export const ContainerHome = styled.section`
   width: 100%;
   height: 93vh;
   box-shadow: 0 0 30px rgb(0 0 0 / 10%);
+  
+  @media (max-width: 768px) {
+    height: auto;
+  }
 `
+
 export const BoxHome = styled.div`
   width: 100%;
   height: 100%;
@@ -31,9 +36,15 @@ export const H1 = styled.h1`
   font-size: 300%;
   font-weight: 600;
   margin: 8% 8%;
+
+  @media (max-width: 370px) {
+    font-size: 250%;
+    margin: 15% 8%;
+  }
 `
+
 export const IconWpp = styled.img`
-  width: 5%;
+  width: 10%;
   margin: 33% 0 0 82%;
   position: fixed;
   border-radius: 60px;
@@ -43,5 +54,10 @@ export const IconWpp = styled.img`
   &:hover {
     transform: scale(1.1);
     transition: 0.2s;
+  }
+
+  @media (max-width: 370px) {
+    margin: 80% 0 0 80%;
+    width: 15%;
   }
 `
