@@ -1,4 +1,4 @@
-import { ContainerNav, H1, Ul, Li } from './styled'
+import { ContainerNav, H1, Ul, Li } from './Styled'
 
 import { Link } from 'react-router-dom'
 
