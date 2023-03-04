@@ -6,12 +6,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   /* Adicionando regras de responsividade */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 380px) {
     /* Altere o tamanho da fonte em telas menores */
     html {
-      font-size: 14px;
+      font-size: 12px;
     }
 
     /* Centralize os elementos do corpo */
@@ -20,6 +20,9 @@ const GlobalStyle = createGlobalStyle`
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
     }
   }
 
@@ -30,8 +33,13 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1048px) {
     /* Adicione mais regras de responsividade para telas maiores */
+    /* ... */
+  }
+
+  @media screen and (min-width: 1049px) {
+    /* Adicione mais regras de responsividade para telas ainda maiores */
     /* ... */
   }
 `

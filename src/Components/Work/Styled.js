@@ -1,13 +1,23 @@
 import styled from 'styled-components'
 
 export const ContainerWork = styled.section`
-  margin: 20px auto;
+  margin: 60px auto;
   max-width: 1400px;
   width: 100%;
   height: 93vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  flex-wrap:  wrap;
+
+  @media (max-width: 850px) {
+    width: 80%;
+  }
+
+  @media (max-width: 380px) {
+    min-width: 100%;
+
+  }
 `
 
 export const BoxWork = styled.div`
@@ -18,6 +28,7 @@ export const BoxWork = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
   .Splide {
     width: 100%;
     height: 100%;
@@ -26,8 +37,8 @@ export const BoxWork = styled.div`
     align-items: center;
   }
 
-  @media (max-width: 768px) {
-    width: 60%;
+  @media (max-width: 850px) {
+    width: 80%;
   }
 
   @media (max-width: 380px) {
@@ -55,6 +66,14 @@ export const BoxArrow = styled.div`
 
     cursor: pointer;
   }
+
+  @media (max-width: 850px) {
+    width: 100%;
+  }
+
+  @media (max-width: 380px) {
+    width: 80%;
+  }
 `
 
 export const BoxHorário = styled.div`
@@ -69,20 +88,19 @@ export const BoxHorário = styled.div`
   box-shadow: 0 0 30px rgb(0 0 0 / 10%);
 
   .Button {
-    width: 30%;
+    
     height: 7%;
     margin-top: 25%;
   }
 
-  @media (max-width: 768px) {
-    width: 40%;
+  @media (max-width: 850px) {
+    width: 100%;
     border-radius: 15px;
-    margin-left: 20px;
   }
 
   @media (max-width: 380px) {
-    width: 70%;
-    margin-left: 5%;
+    width: 100%;
+
   }
 `
 
@@ -91,6 +109,18 @@ export const Text = styled.p`
   font-size: 45px;
   font-weight: 500;
   text-align: justify;
+
+  @media (max-width: 850px) {
+    font-size: 36px;
+    padding: 2px;
+    text-align: center;
+  }
+
+  @media (max-width: 380px) {
+    font-size: 22px;
+    padding: 5px;
+    text-align: center;
+  }
 `
 
 export const Button = styled.button`
@@ -103,38 +133,58 @@ export const Button = styled.button`
   border-radius: 25px;
   color: #fffaf0;
   background-color: rgba(255, 105, 180);
+  padding: 0 26px;
 
   &:hover {
     opacity: 0.9;
     box-shadow: 0 0 15px rgb(255, 20, 147, 0.9);
     cursor: pointer;
   }
-`
 
-export const Img = styled.img`
-  width: 480px;
-
-  @media (max-width: 768px) {
-    width: 80%;
+  @media (max-width: 850px) {
+    font-size: 20px;
+    padding: 12px;
   }
 
   @media (max-width: 380px) {
     width: 100%;
+    font-size: 16px;
+    margin: 8px;
+  }
+`
+
+export const Img = styled.img`
+  width: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 850px) {
+    width: 100%;
+    height: 100%;   
+  }
+
+  @media (max-width: 380px) {
+    width: 100%;
+    height: 760px;
   }
 `
 
 export const Video = styled.div`
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: 100%;
   video {
     height: 650px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     height: 500px;
   }
 
   @media (max-width: 380px) {
-    height: 350px;
+    height: 80%;
+    
   }
-}
+  }
 `;

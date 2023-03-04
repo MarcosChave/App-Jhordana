@@ -27,6 +27,10 @@ export const BoxHome = styled.div`
   background-position: end;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 380px) {
+    width: 100%;
+  }
 `
 
 export const H1 = styled.h1`
@@ -44,10 +48,12 @@ export const H1 = styled.h1`
 `
 
 export const IconWpp = styled.img`
-  width: 10%;
+  width: 4%;
   margin: 33% 0 0 82%;
   position: fixed;
   border-radius: 60px;
+  bottom: 20px;
+  right: 20px;
   cursor: pointer;
   box-shadow: 0 0 30px rgb(0 0 0 / 10%);
 
@@ -55,9 +61,13 @@ export const IconWpp = styled.img`
     transform: scale(1.1);
     transition: 0.2s;
   }
+  @media (max-width: 890px) {
+    margin: 80% 0 0 80%;
+    width: 6%;
+  }
 
   @media (max-width: 370px) {
     margin: 80% 0 0 80%;
-    width: 15%;
+    width: 12%;
   }
 `
