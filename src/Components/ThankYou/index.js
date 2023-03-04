@@ -4,7 +4,7 @@ import {
   Image,
   ImageBor,
   TextTank
-} from './style'
+} from './Style'
 import JhordanaThanks from '../../assets/Jhordana-thanks.jpeg'
 import Borboleta from '../../assets/borboleta.png'
 function Thank() {

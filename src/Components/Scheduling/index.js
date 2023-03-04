@@ -11,7 +11,7 @@ import {
   Button,
   Span,
   IconWpp
-} from './styled'
+} from './Styled'
 import { useNavigate } from 'react-router-dom'
 
 const schema = yup

@@ -1,14 +1,25 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ContainerSobre = styled.section`
   margin: 20px auto;
   max-width: 1400px;
   width: 100%;
-  height: 85vh;
+  min-height: 85vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-`
+  padding: 20px;
+  box-sizing: border-box;
+  
+  @media(max-width: 1048px) {
+    min-height: 80vh;
+  }
+
+  @media(max-width: 768px) {
+    min-height: auto;
+  }
+`;
 
 export const BoxOne = styled.div`
   width: 50%;
@@ -18,11 +29,25 @@ export const BoxOne = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`
+  overflow: hidden;
+  
+  @media(max-width: 768px) {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 20px;
+  }
+`;
+
 export const Image = styled.img`
-  width: 53%;
+  width: 100%;
   border-radius: 8%;
-`
+  object-fit: cover;
+  
+  @media(max-width: 768px) {
+    border-radius: 15px 15px 0 0;
+  }
+`;
 
 export const BoxTwo = styled.div`
   font-family: 'Roboto Slab', sans-serif;
@@ -37,4 +62,11 @@ export const BoxTwo = styled.div`
   border-radius: 0 15px 15px 0;
   display: flex;
   align-items: center;
-`
+  
+  @media(max-width: 768px) {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 15px 15px;
+    padding: 20px;
+  }
+`;

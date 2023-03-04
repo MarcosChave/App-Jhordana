@@ -1,4 +1,4 @@
-import { ContainerHome, BoxHome, IconWpp } from './styled'
+import { ContainerHome, BoxHome, IconWpp } from './Styled'
 import Work from '../Work'
 
 import LogoJho from '../../assets/Jhordana-Logo.png'
